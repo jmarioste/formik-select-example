@@ -9,7 +9,7 @@ const HomePage: NextPage = () => {
         <div>
           <h1>Welcome to Formik Select Example</h1>
           <Formik
-            onSubmit={(values) => alert(JSON.stringify(values, null, 4))}
+            onSubmit={(values) => console.log(JSON.stringify(values, null, 4))}
             initialValues={{
               salary: 0,
             }}
